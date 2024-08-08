@@ -1,8 +1,17 @@
 import React from 'react'
 
-function Tag({Tagname}) {
+function Tag({tagName, selectTag, selected}) {
+  const tagStyle = {
+    HTML: {backgroundColor: "#fda821"},
+    CSS: {backgroundColor: "#15d4c8"},
+    JAVASCRIPT: {backgroundColor: "#ffd12c"},
+    REACT: {backgroundColor: "#4cdafc"},
+    default: {backgroundColor: "#f9f9f9"},
+  }
   return (
-    <button className="tag">{Tagname}</button>
+    <button type='button'
+    style={ selected ? tagStyle[tagName] : tagStyle.default}
+     onClick={() => selectTag(tagName)} className="tag">{tagName}</button>
   )
 }
 

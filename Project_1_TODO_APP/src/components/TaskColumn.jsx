@@ -2,7 +2,7 @@ import React from 'react'
 import "./TaskColumn.css"
 import TaskCard from './TaskCard'
 
-function TaskColumn({heading , icon}) {
+function TaskColumn({heading , icon , tasks, status, handleDelete}) {
   return (
     <section className="task_column">
       <h2 className='task_column_heading'>
@@ -10,7 +10,9 @@ function TaskColumn({heading , icon}) {
          {heading} 
          </h2>
          
-         <TaskCard/>
+         {
+          tasks.map((task, index) => task.status === status && <TaskCard key={index} heading={task.task} tags={task.tags} handleDelete={handleDelete} index={index}/> )
+         }
     </section>
   )
 }
