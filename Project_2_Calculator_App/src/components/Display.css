@@ -1,0 +1,39 @@
+.display{
+    flex: 1;
+    background-color: var(--bg-color-1);
+    transition: all 0.3s ease-in-out;
+    color: var(--text-color-1);
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.display p {
+    font-size: 1.2rem;
+    line-height: 1.87rem;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.border{
+    width: 100%;
+    height: 1px;
+    border: 1px solid #fff999;
+}
+
+.display_expression p{
+    white-space: nowrap;
+    width: fit-content;
+    min-width: 100%;
+    font-weight: 900;
+}
+
+.display_expression {
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.display_result p{
+    font-weight: 900;
+    font-size: 1.7rem !important;
+}

@@ -1,0 +1,6 @@
+.keypad{
+    flex: 1.7;
+    background-color: var(--bg-color-2);
+
+    transition: all 0.3s ease-in-out;
+}

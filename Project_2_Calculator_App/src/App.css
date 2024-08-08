@@ -1,0 +1,92 @@
+.app {
+  --bg-color-1: #9db3ed;
+  --bg-color-2: #f9f9f9;
+  --text-color-1: #0b1537;
+  --text-color-1: #636363;
+}
+
+.app[data-theme = "dark"] {
+  --bg-color-1: #172d67;
+  --bg-color-2: #050c26;
+  --text-color-1: #fbfcfc;
+  --text-color-1: #bbbcbc;
+}
+
+.custom_scroll::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+.custom_scroll::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+.custom_scroll::-webkit-scrollbar-thumb{
+  background-color: rgba(0, 0, 0, 0.14);
+}
+.custom_scroll::-webkit-scrollbar-thumb:hover{
+  background-color: gray;
+}
+
+
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1ba3d4;
+}
+
+.app_calculator{
+  height: 600px;
+  width: 350px;
+  border-radius: 30px;
+  box-shadow: 1px -1px 20px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator_navbar{
+  width: 100%;
+  overflow: hidden;
+  min-height: 30px;
+  padding: 10px;
+  background-color:transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.calculator_navbar img{
+  height: 30px;
+  width: 30px;
+} 
+
+.navbar_toggle{
+  height: 17px;
+  width: 35px;
+  margin-left: 20px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 40px 80px rgba(0, 0, 0, 0.35);
+}
+
+.toggle_circle{
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.navbar_toggle:hover {
+  cursor: pointer;
+}
+
+.toggle_circle_active{
+  margin-left: 17px;
+}
